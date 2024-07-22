@@ -1,0 +1,25 @@
+const express = require("express");
+const router = express.Router();
+
+const messages = [
+  {
+    text: "Hi there!",
+    user: "Amando",
+    added: new Date(),
+  },
+  {
+    text: "Hello World!",
+    user: "Charles",
+    added: new Date(),
+  },
+  {
+    text: "Bonjour!",
+    user: "Alejandro",
+    added: new Date(),
+  },
+];
+
+router.get("/", function (req, res, next) {
+  res.render("index", { title: "Mini Messageboard", messages: messages });
+});
+module.exports = router;
