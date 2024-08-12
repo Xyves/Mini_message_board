@@ -1,0 +1,11 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "driver": "PostgreSQL",
+      "name": "board",
+      "connectString": "postgresql://postgres:RExnVZyftPcadQCUtIivOPfTEALiKptI@roundhouse.proxy.rlwy.net:54461/railway"
+    }
+  ]
+}
